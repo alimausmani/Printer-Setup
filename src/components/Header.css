@@ -1,0 +1,40 @@
+
+/* In src/components/Header.css */
+
+.header {
+    background-color: #fff;
+    padding: 0px 15px;
+    text-align: right;
+    height: 71px;
+    margin: 0px 347.5px;
+    margin-top: 20px;
+    position: relative; 
+  }
+  
+  .chat-now {
+    font-size: 30px;
+    color: #1c85c1;
+    cursor: pointer;
+    position: relative; 
+    display: inline-block; 
+  }
+  
+  .chat-now i {
+    margin-right: 8px; 
+  }
+  
+  .chat-now::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; 
+    right: 0; 
+    width: 0; 
+    height: 4px; 
+    background-color: #1c85c1; 
+    transition: width 0.3s ease; 
+  }
+  
+  .chat-now:hover::after {
+    width: 700%; 
+  }
+  
